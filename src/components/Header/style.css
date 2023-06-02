@@ -1,0 +1,39 @@
+header {
+  max-width: 1440px;
+  margin: auto;
+  padding: 40px 100px 50px 100px;
+}
+
+.logo-container-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link-logo-header {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: baseline;
+}
+
+#hL-header {
+  position: relative;
+  top: 5px;
+}
+
+.links-container-header {
+  display: flex;
+  gap: 50px;
+}
+
+.nav-link-header {
+  font-size: 24px;
+  color: #ff6060;
+  text-decoration: none;
+}
+
+.nav-link-header:hover {
+  text-decoration: underline;
+}
