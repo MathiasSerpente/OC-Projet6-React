@@ -1,0 +1,110 @@
+.container-housing {
+  width: 100%;
+  max-width: 1440px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 100px;
+}
+
+.description-housing {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.container-tlt-or-housing {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-title-location-tags-housing {
+  display: flex;
+  flex-direction: column;
+}
+
+.title-housing {
+  color: #ff6060;
+  font-size: 36px;
+}
+
+.location-housing {
+  color: #ff6060;
+  font-size: 18px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.tags-housing {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.container-tag {
+  background: #ff6060;
+  color: #fff;
+  border-radius: 10px;
+  min-width: 115px;
+  height: 25px;
+  padding: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tag {
+  text-align: center;
+  font-size: 14px;
+}
+
+.container-owner-ratings-housing {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.owner-housing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.name-owner-housing {
+  width: 90px;
+  margin: 0 10px 0 50px;
+  color: #ff6060;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.picture-owner-housing {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+
+.ratings-housing {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+.equipment-housing {
+  width: 100%;
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  gap: 75px;
+}
+
+.equipment-housing .collapse-container {
+  width: 100%;
+}

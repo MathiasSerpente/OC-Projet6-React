@@ -1,8 +1,8 @@
-.collapse-container {
+.container-about .collapse-container {
   width: 100%;
 }
 
-.collapse-header {
+.container-about .collapse-header {
   background-color: #ff6060;
   border-radius: 5px;
   width: 100%;
@@ -13,16 +13,45 @@
   cursor: pointer;
 }
 
-.collapse-header h3 {
+.container-about .collapse-header div {
   font-size: 24px;
   font-weight: 500;
 }
 
-.collapse-content {
+.container-about .collapse-content {
   width: 100%;
   color: #ff6060;
   background-color: #f6f6f6;
   font-size: 24px;
+  font-weight: 400;
+  padding: 30px 40px 30px 20px;
+}
+
+.container-housing .collapse-container {
+  width: 100%;
+}
+
+.container-housing .collapse-header {
+  background-color: #ff6060;
+  border-radius: 5px;
+  width: 100%;
+  padding: 10px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.container-housing .collapse-header div {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.container-housing .collapse-content {
+  width: 100%;
+  color: #ff6060;
+  background-color: #f6f6f6;
+  font-size: 18px;
   font-weight: 400;
   padding: 30px 40px 30px 20px;
 }

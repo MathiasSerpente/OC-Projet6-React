@@ -1,4 +1,8 @@
 .container-error {
+  width: 100%;
+  margin: auto;
+  max-width: 1440px;
+  padding: 0 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;

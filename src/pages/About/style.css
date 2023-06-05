@@ -1,4 +1,5 @@
 .container-about {
+  width: 100%;
   max-width: 1440px;
   margin: auto;
   display: flex;
@@ -41,5 +42,4 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
-  margin-bottom: 40px;
 }

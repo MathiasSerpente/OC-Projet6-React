@@ -1,6 +1,6 @@
 import './style.css'
 import { useEffect } from 'react'
-import BgAbout from '../../assets/about-bg.jpg'
+import BgAbout from '../../assets/banner-about.png'
 import aboutList from '../../datas/aboutList.json'
 import Collapse from '../../components/Collaspe'
 
@@ -15,15 +15,11 @@ function About() {
         <img src={BgAbout} alt="Paysage de montagne" className="bg-about" />
         <div className="overlay-about"></div>
       </div>
-      <section className="collapse-container-about">
-        {aboutList.map((element) => (
-          <Collapse
-            key={element.id}
-            title={element.title}
-            content={element.content}
-          />
+      <ul className="collapse-container-about">
+        {aboutList.map((e) => (
+          <Collapse key={e.id} title={e.title} content={e.content} />
         ))}
-      </section>
+      </ul>
     </main>
   )
 }
