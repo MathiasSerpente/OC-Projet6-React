@@ -15,7 +15,7 @@ function About() {
         <img src={BgAbout} alt="Paysage de montagne" className="bg-about" />
         <div className="overlay-about"></div>
       </div>
-      <ul className="collapse-container-about">
+      <ul className="container-collapses-about">
         {aboutList.map((e) => (
           <Collapse key={e.id} title={e.title} content={e.content} />
         ))}

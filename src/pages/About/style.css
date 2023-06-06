@@ -37,9 +37,32 @@
   opacity: 0.3;
 }
 
-.collapse-container-about {
+.container-collapses-about {
   width: 80%;
   display: flex;
   flex-direction: column;
   gap: 30px;
+}
+
+@media screen and (max-width: 1000px) {
+  .container-about {
+    padding: 0 20px;
+  }
+
+  .img-container-about {
+    margin-bottom: 20px;
+  }
+
+  .bg-about {
+    border-radius: 10px;
+  }
+
+  .overlay-about {
+    border-radius: 10px;
+  }
+
+  .container-collapses-about {
+    width: 100%;
+    gap: 20px;
+  }
 }

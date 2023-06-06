@@ -20,10 +20,34 @@
   font-size: 36px;
   color: #ff6060;
   margin-bottom: 200px;
+  text-align: center;
 }
 
 .link-error {
   font-size: 18px;
   color: #ff6060;
   margin-bottom: 160px;
+}
+
+@media screen and (max-width: 1000px) {
+  .container-error {
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .number-error {
+    font-size: 96px;
+    margin: 50px 0 50px 0;
+  }
+
+  .message-error {
+    font-size: 18px;
+    margin-bottom: 100px;
+  }
+
+  .link-error {
+    font-size: 14px;
+    margin-bottom: 100px;
+  }
 }

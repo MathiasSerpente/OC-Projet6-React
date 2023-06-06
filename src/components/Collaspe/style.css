@@ -1,8 +1,8 @@
-.container-about .collapse-container {
+.collapse-container {
   width: 100%;
 }
 
-.container-about .collapse-header {
+.collapse-header {
   background-color: #ff6060;
   border-radius: 5px;
   width: 100%;
@@ -10,48 +10,62 @@
   color: #fff;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   cursor: pointer;
 }
 
-.container-about .collapse-header div {
+.container-about .title-collapse-header {
   font-size: 24px;
-  font-weight: 500;
 }
 
 .container-about .collapse-content {
   width: 100%;
   color: #ff6060;
   background-color: #f6f6f6;
+  border-radius: 5px;
   font-size: 24px;
   font-weight: 400;
-  padding: 30px 40px 30px 20px;
+  padding: 30px 20px 10px 20px;
 }
 
-.container-housing .collapse-container {
-  width: 100%;
-}
-
-.container-housing .collapse-header {
-  background-color: #ff6060;
-  border-radius: 5px;
-  width: 100%;
-  padding: 10px;
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-  cursor: pointer;
-}
-
-.container-housing .collapse-header div {
+.container-housing .title-collapse-header {
   font-size: 18px;
-  font-weight: 500;
 }
 
 .container-housing .collapse-content {
   width: 100%;
   color: #ff6060;
   background-color: #f6f6f6;
+  border-radius: 5px;
   font-size: 18px;
   font-weight: 400;
-  padding: 30px 40px 30px 20px;
+  padding: 30px 20px 25px 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .collapse-header {
+    padding: 8px;
+  }
+
+  .container-about .title-collapse-header {
+    font-size: 13px;
+  }
+
+  .container-housing .title-collapse-header {
+    font-size: 13px;
+  }
+
+  .arrow-collapse-header {
+    height: 9px;
+  }
+
+  .container-about .collapse-content {
+    font-size: 12px;
+    padding: 20px 10px 50px 10px;
+  }
+
+  .container-housing .collapse-content {
+    font-size: 12px;
+    padding: 20px 10px 50px 10px;
+  }
 }

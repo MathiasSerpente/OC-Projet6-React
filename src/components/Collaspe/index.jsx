@@ -13,8 +13,12 @@ function Collapse({ id, title, content }) {
   return (
     <li className="collapse-container">
       <div className="collapse-header" key={id} onClick={toggleCollapse}>
-        <div>{title}</div>
-        <img src={isOpen ? Close : Open} alt={isOpen ? 'Fermer' : 'Ouvrir'} />
+        <div className="title-collapse-header">{title}</div>
+        <img
+          className="arrow-collapse-header"
+          src={isOpen ? Close : Open}
+          alt={isOpen ? 'Fermer' : 'Ouvrir'}
+        />
       </div>
       {isOpen && <div className="collapse-content">{content}</div>}
     </li>

@@ -11,6 +11,7 @@ function Housing() {
   const housing = housingList.find((housing) => housing.id === id)
   const ratingsArray = [1, 2, 3, 4, 5]
   const tagsArray = housing.tags
+  const equipmentsArray = housing.equipments
 
   return (
     <main className="container-housing">
@@ -62,9 +63,23 @@ function Housing() {
             </div>
           </div>
         </div>
-        <ul className="equipment-housing">
+        <ul className="container-collapses-housing">
           <Collapse title="Description" content={housing.description} />
-          <Collapse title="Équipements" content="Test" />
+          <Collapse
+            title="Équipements"
+            content={
+              <div className="collapse-equipment-housing">
+                {equipmentsArray.map((e, index) => {
+                  const collaspeContent = (
+                    <span key={index} className="item-collapse">
+                      {e}
+                    </span>
+                  )
+                  return collaspeContent
+                })}
+              </div>
+            }
+          />
         </ul>
       </div>
     </main>

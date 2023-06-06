@@ -26,10 +26,10 @@ const Carousel = (props) => {
       {props.pictures.length > 1 ? (
         <div className="container-btn-carousel">
           <button className="btn-previous-carousel" onClick={previousImage}>
-            <img src={Previous} alt="Précédente" />
+            <img className="arrow-carousel" src={Previous} alt="Précédente" />
           </button>
           <button className="btn-next-carousel" onClick={nextImage}>
-            <img src={Next} alt="Suivante" />
+            <img className="arrow-carousel" src={Next} alt="Suivante" />
           </button>
         </div>
       ) : null}

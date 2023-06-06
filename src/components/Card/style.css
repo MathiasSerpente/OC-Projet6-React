@@ -37,3 +37,18 @@
   position: absolute;
   z-index: 2;
 }
+
+@media screen and (max-width: 1000px) {
+  .card {
+    height: 255px;
+  }
+
+  .img-card {
+    height: 255px;
+    border-radius: 10px;
+  }
+
+  .overlay-card {
+    height: 255px;
+  }
+}

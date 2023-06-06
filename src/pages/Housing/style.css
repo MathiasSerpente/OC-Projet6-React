@@ -13,8 +13,6 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
 }
 
 .container-tlt-or-housing {
@@ -97,7 +95,7 @@
   gap: 15px;
 }
 
-.equipment-housing {
+.container-collapses-housing {
   width: 100%;
   margin-top: 25px;
   display: flex;
@@ -105,6 +103,118 @@
   gap: 75px;
 }
 
-.equipment-housing .collapse-container {
+.container-collapses-housing {
   width: 100%;
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  gap: 75px;
+}
+
+.collapse-equipment-housing {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-collapse {
+  color: #ff6060;
+  background-color: #f6f6f6;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 1000px) {
+  .container-housing {
+    padding: 0 20px;
+  }
+
+  .container-tlt-or-housing {
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container-title-location-tags-housing {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .container-owner-ratings-housing {
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  .owner-housing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container-collapses-housing {
+    width: 100%;
+    margin-top: 15px;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .collapse-equipment-housing {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .title-housing {
+    font-size: 18px;
+  }
+
+  .location-housing {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .container-tag {
+    border-radius: 5px;
+    min-width: 84px;
+    height: 18px;
+    padding: 0 5px;
+  }
+
+  .tag {
+    text-align: center;
+    font-size: 10px;
+  }
+
+  .name-owner-housing {
+    width: 70px;
+    font-size: 12px;
+    line-height: 1;
+    text-align: right;
+    margin: 0 10px 0 20px;
+  }
+
+  .picture-owner-housing {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+  }
+
+  .ratings-housing {
+    gap: 7px;
+  }
+
+  .star {
+    height: 13px;
+  }
+
+  .item-collapse {
+    font-size: 12px;
+  }
 }

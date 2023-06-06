@@ -4,7 +4,6 @@ header {
   margin: auto;
   padding: 40px 100px 50px 100px;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
@@ -22,4 +21,24 @@ header {
 
 .nav-link-header:hover {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 1000px) {
+  header {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .logo {
+    height: 45px;
+  }
+  .links-container-header {
+    gap: 25px;
+  }
+
+  .nav-link-header {
+    font-size: 12px;
+    text-transform: uppercase;
+  }
 }
