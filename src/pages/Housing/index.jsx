@@ -2,13 +2,18 @@ import './style.css'
 import housingList from '../../datas/housingList.json'
 import RedStar from '../../assets/red-star.svg'
 import GreyStar from '../../assets/grey-star.svg'
-import { useParams } from 'react-router-dom'
+import { useParams, Navigate } from 'react-router-dom'
 import Carousel from '../../components/Carousel'
 import Collapse from '../../components/Collaspe'
 
 function Housing() {
   const { id } = useParams()
   const housing = housingList.find((housing) => housing.id === id)
+
+  if (!housing) {
+    return <Navigate to="/error" />
+  }
+
   const ratingsArray = [1, 2, 3, 4, 5]
   const tagsArray = housing.tags
   const equipmentsArray = housing.equipments
