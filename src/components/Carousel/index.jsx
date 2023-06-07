@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import Previous from '../../assets/previous-carousel.svg'
 import Next from '../../assets/next-carousel.svg'
 
-const Carousel = (props) => {
+function Carousel(props) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
 
   function previousImage() {
