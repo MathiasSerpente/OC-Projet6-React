@@ -42,3 +42,10 @@ header {
     text-transform: uppercase;
   }
 }
+
+@media screen and (max-width: 365px) {
+  .links-container-header {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
