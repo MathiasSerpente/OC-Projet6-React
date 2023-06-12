@@ -4,7 +4,7 @@ import Home from './pages/Home'
 import Housing from './pages/Housing'
 import About from './pages/About'
 import Header from './components/Header'
-import Error from './components/Error'
+import Error from './pages/Error'
 import Footer from './components/Footer'
 
 function App() {
